@@ -1,23 +1,42 @@
 import logo from './logo.svg';
+import {useState,useEffect} from "react";
 import './App.css';
+import Player from './components/Player';
 
-function App() {
+const App=()=> {
+  const [songs,setSongs] = useState([
+    {
+        "title": "testing",
+        "artist": "notparth!",
+        "img_src": "./track_images/pexels-ekaterina-3128080.jpg",
+        "src": "./tracks/actual daftMASTER.wav"
+    },    {
+      "title": "testing 2",
+      "artist": "notparth!",
+      "img_src": "./track_images/pexels-ekaterina-3128080.jpg",
+      "src": "./tracks/actual daftMASTER.wav"
+  },
+]);
+
+const [currentSongIndex,setCurrentSongIndex] = useState(0);
+const [nextSongIndex,setNextSongIndex] = useState(currentSongIndex + 1);
+
+
+useEffect(()=>{
+  setNextSongIndex(()=>{
+  if (currentSongIndex + 1 >songs.length - 1 ){
+    return 0;
+  } else{
+    return currentSongIndex + 1;
+  }
+});
+},[currentSongIndex])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HAHA
-        </a>
-      </header>
+      GAGA
+      <Player currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} nextSongIndex={nextSongIndex} songs={songs} />
     </div>
   );
 }
