@@ -43,7 +43,7 @@ function Player(props) {
   };
 
   return (
-    <>
+    <React.Fragment>
       <p>
         <div className="text-anim">
           <strong>Upcoming Song:</strong>
@@ -79,7 +79,7 @@ function Player(props) {
 
         {/* <h4>Lofi Music Player React </h4> */}
       </div>
-    </>
+      </React.Fragment>
   );
 }
 export default Player;

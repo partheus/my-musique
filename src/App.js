@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import {useState,useEffect} from "react";
 import './App.css';
 import Player from './components/Player';
 
 const App=()=> {
-  const [songs,setSongs] = useState([
+  const [songs] = useState([
     {
         "title": "testing",
         "artist": "notparth!",
