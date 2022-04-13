@@ -44,8 +44,8 @@ function Player(props) {
 
   return (
     <React.Fragment>
-      <p>
-        <div className="text-anim">
+      <div className="player-ui">
+        <div className="">
           <strong>Upcoming Song:</strong>
         </div>
 
@@ -63,7 +63,7 @@ function Player(props) {
             {/* <b>{props.songs[props.nextSongIndex].album}</b> */}
           </p>
         </div>
-      </p>
+      </div>
       <div className="music-player">
         <audio
           src={props.songs[props.currentSongIndex].src}

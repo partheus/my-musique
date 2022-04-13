@@ -8,14 +8,14 @@ import ReactDOM from 'react-dom';
 const App=()=> {
   const [songs] = useState([
     {
-        "title": "testing",
-        "artist": "notparth!",
-        "img_src": "./track_images/pexels-ekaterina-3128080.jpg",
+        "title": "Monke",
+        "artist": "Parth",
+        "img_src": "./track_images/Album-Cover-Temi-Coker6.png",
         "src": "./tracks/actual daftMASTER.wav"
     },    {
-      "title": "bday",
-      "artist": "notparth!",
-      "img_src": "./track_images/pexels-ekaterina-3128080.jpg",
+      "title": "Hurlywurly",
+      "artist": "Parth",
+      "img_src": "./track_images/Album-Cover-Temi-Coker3.png",
       "src": "./tracks/bday.wav"
   },
 ]);
@@ -37,7 +37,12 @@ useEffect(()=>{
 
   return (
     <div className="App">
-      <h1 className="pagetitle">Parth's Music</h1>
+      <div className="navbar"><h1 className="pagetitle">Parth's Music</h1>
+      <div className="navlinks">
+        <a href="/">view sauce/</a>
+        <a href="https://parth.ninja">view main page/</a>
+      </div>
+        </div>
       <Player currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} nextSongIndex={nextSongIndex} songs={songs} />
     </div>
   );
