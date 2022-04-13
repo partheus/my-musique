@@ -1,6 +1,9 @@
 import {useState,useEffect} from "react";
 import './App.css';
 import Player from './components/Player';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 
 const App=()=> {
   const [songs] = useState([
@@ -10,10 +13,10 @@ const App=()=> {
         "img_src": "./track_images/pexels-ekaterina-3128080.jpg",
         "src": "./tracks/actual daftMASTER.wav"
     },    {
-      "title": "testing 2",
+      "title": "bday",
       "artist": "notparth!",
       "img_src": "./track_images/pexels-ekaterina-3128080.jpg",
-      "src": "./tracks/actual daftMASTER.wav"
+      "src": "./tracks/bday.wav"
   },
 ]);
 
@@ -34,7 +37,7 @@ useEffect(()=>{
 
   return (
     <div className="App">
-      GAGA
+      <h1 className="pagetitle">Parth's Music</h1>
       <Player currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} nextSongIndex={nextSongIndex} songs={songs} />
     </div>
   );
