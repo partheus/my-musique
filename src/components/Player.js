@@ -44,26 +44,6 @@ function Player(props) {
 
   return (
     <React.Fragment>
-      <div className="player-ui">
-        <div className="">
-          <strong>Upcoming Song:</strong>
-        </div>
-
-        <div className="nextsong-details">
-          <img
-            src={props.songs[props.nextSongIndex].img_src}
-            alt={props.songs[props.nextSongIndex].title}
-            style={{ width: "4em", height: "auto" }}
-          />
-          <p>
-            <b>{props.songs[props.nextSongIndex].title} </b>&nbsp; by &nbsp;
-            <b>{props.songs[props.nextSongIndex].artist}</b>
-            {/* &nbsp; from album
-            &nbsp; */}
-            {/* <b>{props.songs[props.nextSongIndex].album}</b> */}
-          </p>
-        </div>
-      </div>
       <div className="music-player">
         <audio
           src={props.songs[props.currentSongIndex].src}
@@ -77,7 +57,28 @@ function Player(props) {
           SkipSong={SkipSong}
         />
 
-        {/* <h4>Lofi Music Player React </h4> */}
+      </div>
+
+
+
+      <div className="player-ui">
+        <div className="nextsong">
+          <strong>Upcoming Song: </strong>
+        </div>
+
+        <div className="nextsong-details">
+          <img
+            src={props.songs[props.nextSongIndex].img_src}
+            alt={props.songs[props.nextSongIndex].title}
+            style={{ width: "4em", height: "4em" }}
+          />
+          <p>
+            <b>{props.songs[props.nextSongIndex].title} </b>&nbsp; by &nbsp;
+            <b>{props.songs[props.nextSongIndex].artist}</b>
+
+          </p>
+        </div>
+        
       </div>
       </React.Fragment>
   );
