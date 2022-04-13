@@ -2,8 +2,6 @@ import {useState,useEffect} from "react";
 import './App.css';
 import Player from './components/Player';
 import React from 'react';
-import ReactDOM from 'react-dom';
-
 
 const App=()=> {
   const [songs] = useState([
