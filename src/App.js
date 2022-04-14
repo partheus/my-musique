@@ -20,7 +20,7 @@ const App = () => {
     {
       title: "Janglebop",
       artist: "Parth",
-      img_src: "./track_images/Album-Cover-Temi-Coker1.png",
+      img_src: "./track_images/Album-Cover-Temi-Coker01.png",
       src: "./tracks/janglebop.wav",
     },
         {
@@ -34,6 +34,12 @@ const App = () => {
       artist: "Parth",
       img_src: "./track_images/Album-Cover-Temi-Coker2.png",
       src: "./tracks/synthpop.wav",
+    },
+    {
+      title: "Funkjam",
+      artist: "Parth",
+      img_src: "./track_images/Album-Cover-Temi-Coker4.png",
+      src: "./tracks/funkjam.wav",
     },
   ]);
 
@@ -58,6 +64,7 @@ const App = () => {
           <a href="https://github.com/partheus/my-musique" target="_blank">view sauce/</a>
           <a href="https://parth.ninja" target="_blank">view main page/</a>
         </div>
+        <p style="text-align: center;">Is your device volume high?</p>
       </div>
       <Player
         currentSongIndex={currentSongIndex}
