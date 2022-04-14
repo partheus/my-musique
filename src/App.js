@@ -29,7 +29,7 @@ const App = () => {
       img_src: "./track_images/Album-Cover-Temi-Coker5.png",
       src: "./tracks/wavyexport.wav",
     },
-    synthpop {
+    {
       title: "Synthpop",
       artist: "Parth",
       img_src: "./track_images/Album-Cover-Temi-Coker2.png",
