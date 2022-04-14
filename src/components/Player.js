@@ -56,31 +56,24 @@ function Player(props) {
           setIsPlaying={setIsPlaying}
           SkipSong={SkipSong}
         />
-
       </div>
 
+      <div className="next-track">
+        <h4>Upcoming Track: </h4>
 
-
-      <div className="player-ui">
-        <div className="nextsong">
-          <strong>Upcoming Song: </strong>
-        </div>
-
-        <div className="nextsong-details">
+        <div className="next-details">
           <img
             src={props.songs[props.nextSongIndex].img_src}
             alt={props.songs[props.nextSongIndex].title}
             style={{ width: "4em", height: "4em" }}
           />
           <p>
-            <b>{props.songs[props.nextSongIndex].title} </b>&nbsp; by &nbsp;
+            <b>{props.songs[props.nextSongIndex].title}</b>&nbsp; by &nbsp;
             <b>{props.songs[props.nextSongIndex].artist}</b>
-
           </p>
         </div>
-        
       </div>
-      </React.Fragment>
+    </React.Fragment>
   );
 }
 export default Player;
