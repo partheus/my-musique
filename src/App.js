@@ -9,13 +9,31 @@ const App = () => {
       title: "Monke",
       artist: "Parth",
       img_src: "./track_images/Album-Cover-Temi-Coker6.png",
-      src: "./tracks/actual daftMASTER.wav",
+      src: "./tracks/daft.wav",
     },
     {
       title: "Hurlywurly",
       artist: "Parth",
       img_src: "./track_images/Album-Cover-Temi-Coker3.png",
       src: "./tracks/bday.wav",
+    },
+    {
+      title: "Janglebop",
+      artist: "Parth",
+      img_src: "./track_images/Album-Cover-Temi-Coker1.png",
+      src: "./tracks/janglebop.wav",
+    },
+        {
+      title: "Wavyexport",
+      artist: "Parth",
+      img_src: "./track_images/Album-Cover-Temi-Coker5.png",
+      src: "./tracks/wavyexport.wav",
+    },
+    synthpop {
+      title: "Synthpop",
+      artist: "Parth",
+      img_src: "./track_images/Album-Cover-Temi-Coker2.png",
+      src: "./tracks/synthpop.wav",
     },
   ]);
 
@@ -37,8 +55,8 @@ const App = () => {
       <div className="navbar">
         <h1 className="pagetitle">Parth's Music</h1>
         <div className="navlinks">
-          <a href="/">view sauce/</a>
-          <a href="https://parth.ninja">view main page/</a>
+          <a href="https://github.com/partheus/my-musique" target="_blank">view sauce/</a>
+          <a href="https://parth.ninja" target="_blank">view main page/</a>
         </div>
       </div>
       <Player
