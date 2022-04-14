@@ -64,7 +64,7 @@ const App = () => {
           <a href="https://github.com/partheus/my-musique" target="_blank">view sauce/</a>
           <a href="https://parth.ninja" target="_blank">view main page/</a>
         </div>
-        <p style="text-align: center;">Is your device volume high?</p>
+        <p>Is your device volume high?</p>
       </div>
       <Player
         currentSongIndex={currentSongIndex}
