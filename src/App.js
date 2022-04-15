@@ -59,13 +59,13 @@ const App = () => {
   return (
     <div className="App">
       <div className="navbar">
-        <h1 className="pagetitle">
+        <h1 className="pagetitle slide-in-blurred-left">
           <a href="/">Parth's Music</a>
         </h1>
-        <p>
+        <p className="slide-in-blurred-left">
 Notes and harmonies and hats and drops.
         </p>
-        <div className="navlinks">
+        <div className="navlinks slide-in-blurred-left">
           <a href="https://github.com/partheus/my-musique" target="_blank">
             view sauce/
           </a>

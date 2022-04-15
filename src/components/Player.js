@@ -44,7 +44,7 @@ function Player(props) {
 
   return (
     <React.Fragment>
-      <div className="music-player">
+      <div className="music-player slide-in-blurred-left">
         <audio
           src={props.songs[props.currentSongIndex].src}
           ref={audioElement}
@@ -58,7 +58,7 @@ function Player(props) {
         />
       </div>
 
-      <div className="next-track">
+      <div className="next-track slide-in-blurred-left">
         <h4 style={{ weight: "100" }}>Upcoming Track: <b>"{props.songs[props.nextSongIndex].title}"</b></h4>
         <img
             src={props.songs[props.nextSongIndex].img_src}
