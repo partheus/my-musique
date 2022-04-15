@@ -23,7 +23,7 @@ const App = () => {
       img_src: "./track_images/Album-Cover-Temi-Coker3.png",
       src: "./tracks/janglebop.wav",
     },
-        {
+    {
       title: "Slackjaw",
       artist: "Parth",
       img_src: "./track_images/Album-Cover-Temi-Coker4.png",
@@ -59,19 +59,33 @@ const App = () => {
   return (
     <div className="App">
       <div className="navbar">
-        <h1 className="pagetitle"><a href="/">Parth's Music</a></h1>
+        <h1 className="pagetitle">
+          <a href="/">Parth's Music</a>
+        </h1>
         <div className="navlinks">
-          <a href="https://github.com/partheus/my-musique" target="_blank">view sauce/</a>
-          <a href="https://parth.ninja" target="_blank">view main page/</a>
+          <a href="https://github.com/partheus/my-musique" target="_blank">
+            view sauce/
+          </a>
+          <a href="https://parth.ninja" target="_blank">
+            view main page/
+          </a>
         </div>
       </div>
       <p>Is your device volume high?</p>
+      <div class="music-bars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <Player
         currentSongIndex={currentSongIndex}
         setCurrentSongIndex={setCurrentSongIndex}
         nextSongIndex={nextSongIndex}
         songs={songs}
       />
+      
     </div>
   );
 };

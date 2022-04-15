@@ -68,7 +68,7 @@ function Player(props) {
             style={{ width: "4em", height: "4em" }}
           />
           <p>
-            <b>{props.songs[props.nextSongIndex].title}</b>&nbsp; by &nbsp;
+            <b>"{props.songs[props.nextSongIndex].title}"</b>&nbsp; by &nbsp;
             <b>{props.songs[props.nextSongIndex].artist}</b>
           </p>
         </div>
