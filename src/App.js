@@ -62,6 +62,9 @@ const App = () => {
         <h1 className="pagetitle">
           <a href="/">Parth's Music</a>
         </h1>
+        <p>
+Notes and harmonies and hats and drops.
+        </p>
         <div className="navlinks">
           <a href="https://github.com/partheus/my-musique" target="_blank">
             view sauce/
