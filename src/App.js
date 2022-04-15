@@ -6,39 +6,39 @@ import React from "react";
 const App = () => {
   const [songs] = useState([
     {
-      title: "Monke",
+      title: "Marketblop",
       artist: "Parth",
-      img_src: "./track_images/Album-Cover-Temi-Coker6.png",
+      img_src: "./track_images/Album-Cover-Temi-Coker01.png",
       src: "./tracks/daft.wav",
     },
     {
       title: "Hurlywurly",
       artist: "Parth",
-      img_src: "./track_images/Album-Cover-Temi-Coker3.png",
+      img_src: "./track_images/Album-Cover-Temi-Coker2.png",
       src: "./tracks/bday.wav",
     },
     {
       title: "Janglebop",
       artist: "Parth",
-      img_src: "./track_images/Album-Cover-Temi-Coker01.png",
+      img_src: "./track_images/Album-Cover-Temi-Coker3.png",
       src: "./tracks/janglebop.wav",
     },
         {
-      title: "Wavyexport",
+      title: "Slackjaw",
       artist: "Parth",
-      img_src: "./track_images/Album-Cover-Temi-Coker5.png",
+      img_src: "./track_images/Album-Cover-Temi-Coker4.png",
       src: "./tracks/wavyexport.wav",
     },
     {
       title: "Synthpop",
       artist: "Parth",
-      img_src: "./track_images/Album-Cover-Temi-Coker2.png",
+      img_src: "./track_images/Album-Cover-Temi-Coker5.png",
       src: "./tracks/synthpop.wav",
     },
     {
       title: "Funkjam",
       artist: "Parth",
-      img_src: "./track_images/Album-Cover-Temi-Coker4.png",
+      img_src: "./track_images/Album-Cover-Temi-Coker6.png",
       src: "./tracks/funkjam.wav",
     },
   ]);
