@@ -59,13 +59,13 @@ const App = () => {
   return (
     <div className="App">
       <div className="navbar">
-        <h1 className="pagetitle">Parth's Music</h1>
+        <h1 className="pagetitle"><a href="/">Parth's Music</a></h1>
         <div className="navlinks">
           <a href="https://github.com/partheus/my-musique" target="_blank">view sauce/</a>
           <a href="https://parth.ninja" target="_blank">view main page/</a>
         </div>
-        <p>Is your device volume high?</p>
       </div>
+      <p>Is your device volume high?</p>
       <Player
         currentSongIndex={currentSongIndex}
         setCurrentSongIndex={setCurrentSongIndex}
