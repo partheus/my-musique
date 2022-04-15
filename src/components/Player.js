@@ -59,19 +59,24 @@ function Player(props) {
       </div>
 
       <div className="next-track">
-        <h4>Upcoming Track: </h4>
-
-        <div className="next-details">
+        <h4 style={{ weight: "100" }}>Upcoming Track: <b>"{props.songs[props.nextSongIndex].title}"</b></h4>
+        <img
+            src={props.songs[props.nextSongIndex].img_src}
+            alt={props.songs[props.nextSongIndex].title}
+            style={{ width: "4em", height: "4em" }}
+          />
+        {/* <div className="next-details">
           <img
             src={props.songs[props.nextSongIndex].img_src}
             alt={props.songs[props.nextSongIndex].title}
             style={{ width: "4em", height: "4em" }}
           />
           <p>
-            <b>"{props.songs[props.nextSongIndex].title}"</b>&nbsp; by &nbsp;
+            <b>"{props.songs[props.nextSongIndex].title}"</b>
+            &nbsp; by &nbsp;
             <b>{props.songs[props.nextSongIndex].artist}</b>
           </p>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );

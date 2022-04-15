@@ -85,7 +85,9 @@ const App = () => {
         nextSongIndex={nextSongIndex}
         songs={songs}
       />
-      
+      <div className="footer">
+        <a href="">Parth Shiralkar, 2022</a>
+      </div>
     </div>
   );
 };

@@ -41,6 +41,10 @@ body {
   padding: 1em;
 }
 
+h4 {
+  font-weight: 600;
+}
+
 /* Navbar */
 
 .navbar {
