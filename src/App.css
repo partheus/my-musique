@@ -216,6 +216,16 @@ a:visited {
   color: #d30320;
 }
 
+.next-track {
+  display: block;
+  font-size: 2em;
+}
+
+.next-details {
+  display: block;
+
+}
+
 /* Footer */
 
 .nextsong-details img {
