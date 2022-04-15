@@ -200,11 +200,12 @@ a:visited {
 }
 
 .details-title {
-  margin-bottom: 0.5rem;
+  font-size: 2em;
+  margin-bottom: 0;
 }
 
 .details-artist {
-  font-size: 0.75rem;
+  font-size: 1.5em;
   font-weight: 300;
   color: #666;
 }
