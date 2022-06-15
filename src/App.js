@@ -89,7 +89,7 @@ Notes and harmonies and hats and drops.
         songs={songs}
       />
       <div className="footer">
-        <a href="">Parth Shiralkar, 2022</a>
+        <a href="">Parth Shiralkar, 2022 and forever</a>
       </div>
     </div>
   );
